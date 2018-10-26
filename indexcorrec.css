@@ -1,3 +1,6 @@
+
+/*------HEADER---------*/
+
 .b-page
 {
     width:100%; /*блок по всей ширине окна*/
@@ -57,10 +60,10 @@ h1:first-letter {
 	right:0;
     padding:0;
 	display:inline-block;
-	list-style:none; 
 	font-family:Time New Roman;
 	font-weight: 1000;
 	display:table;
+	width: 50%;
     table-layout: fixed;  
 
 }
@@ -71,8 +74,6 @@ h1:first-letter {
     color:black;
     cursor:pointer;
     font-size:12px;
-    cursor:pointer;
-    line-height:15px;
 	padding: 0px 5px 0px 5px;
     display:table-cell;
     text-decoration: none;
@@ -84,18 +85,13 @@ h1:first-letter {
     background-color:white;
 }
 
+
+/*------SLIDER-----****/
+
 .content_slide {
-    margin-right: auto;
 	margin-top: 5%;
 	padding: 50px;
 	height: 400px;
-}
-
-.content_slide_img {
-	display: block;
-	margin-left: auto;
-    margin-right: auto;
-	text-align: center;
 }
 
 .content_slide_img img{
@@ -104,12 +100,13 @@ h1:first-letter {
 }
 
 
+/*---Main content--*/
+
 .content_title{
 	background-color: #f8f8f8;
 	margin-left: auto;
     margin-right: auto;
 }
-
 
 .content_title_back {
 	background-color: #f8f8f8;
@@ -196,6 +193,8 @@ h1:first-letter {
 	}
 
 	
+/*-----Recent works-----*/	
+	
 .recent_works{
 	height: 50px;
 	margin-top: 100px;
@@ -205,21 +204,18 @@ h1:first-letter {
 .recent_works_center{
 	position: absolute;
 	text-align: center;
-	width: 200px;
-	margin:0 auto;
-	margin-left: 120px;
-	/*display: inline-block;*/
+	margin-left: 390px;
 }
 
 .recent_works_title{
-    margin-top:10px; 	
+    margin-top:10px; 
 }
 
 .recent_style{
 	font-size: 16px;
 	color: black;
 	font-weight: 1500;
-	float: left;
+	float: none;
 }
 .recents_block{
 	text-align: center;
@@ -240,26 +236,90 @@ h1:first-letter {
 	height: 200px;
 }
 
-.footer{ 
 
+/*-------FOOTER------*/	
+	
+.footer{ 
   background:#68A4C4; 
   position: relative;
   margin-top: 100px;
   width:100%;
-  height:250px; 
+  height:350px; 
+}
+
+ 
+.footer_wrapper {
+	width: 1060px;
+    margin: 0 auto;
+    height: 300px;
+
 }
   
-.footer_wrapper {
-	margin-left: 505px;
+.footer_block{
+	float: left; /*Задаем обтекание*/
+    line-height: 25px;/*Высота строки +  верт. центрирования текста*/
+	font-size: 14px;
+    color: white;
+    width: 250px; 
+    margin-right: 10px;
+    text-align: center; 	
 }
 
-.footer_note{
-	position: absolute;
-	bottom:10px;
+
+.footer_block_content{
+	text-align: left;
 }
 
-
-.ter{
-	font-size: 12px;
+.footer_content_title {
 	color: white;
- }
+	font-size: 14px;
+	font-weight: 600;
+	padding: 60px 0px 20px 20px;
+}
+
+
+.footer_block_mod_title{
+	font-size: 14px;
+	font-weight: 600;
+	padding-left: 20px;
+	color: white;
+}
+
+.footer_block_mod {
+	color: white;
+	padding-left: 20px;
+}
+
+
+.footer_block_contact{
+	color: white;
+	float: left;
+	padding-left: 20px;
+	
+}
+
+.footer_block_note {
+	color: white;
+	float: left;
+	padding-left: 20px;
+	padding-top: 50px;
+}
+
+.f_block_link {
+	bottom:0;
+	right:0;
+    padding:0;
+	display:block;
+	list-style:none; 
+	
+}
+
+.f_link_style {
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+    cursor:pointer;
+    line-height:15px;
+	padding: 0px 5px 10px 0px;
+    text-decoration: none;
+}
